@@ -24,14 +24,6 @@ export const MemoryGame = () => {
       );
     });
   };
-  console.log(cards);
-
-  const checkGameFinished = () => {
-    const isFinish = cards.every((card) => card.isPredicted);
-    if (isFinish) {
-      setIsGameFinish(true);
-    }
-  };
 
   const handleStartGame = () => {
     setIsSelectLevel(false);
@@ -40,8 +32,15 @@ export const MemoryGame = () => {
   };
 
   useEffect(() => {
+    const checkGameFinished = () => {
+      const isFinish = cards.every((card) => card.isPredicted);
+      if (isFinish) {
+        setIsGameFinish(true);
+      }
+    };
+  
     checkGameFinished();
-  }, [cards, checkGameFinished]);
+  }, [cards]);
 
   return (
     <div className="memory-game">
