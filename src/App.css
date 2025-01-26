@@ -1,0 +1,29 @@
+.app {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.memory-game__title {
+  font-family: "Open Sans", serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  letter-spacing: 3px;
+  color: #fff;
+  font-size: 44px;
+  margin-bottom: 35px;
+}
+
+.memory-game {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 575px) {
+  .memory-game__title {
+    font-size: 38px;
+  }
+}

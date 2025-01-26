@@ -1,0 +1,75 @@
+.select-level {
+  font-family: "Open Sans", serif;
+  background-color: #ffffff;
+  width: 450px;
+  padding: 30px 20px;
+  border-radius: 4px;
+}
+
+.select-level__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.select-level__label {
+  font-family: "Open Sans", serif;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #33425c;
+  margin-bottom: 5px;
+}
+
+.select-level__select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #e6b745;
+  color: #121212;
+  font-size: 17px;
+}
+
+.select-level__select:focus {
+  border: none;
+  outline: 2px solid #33425c;
+}
+
+.select-level__btn {
+  background-color: #e6b745;
+  border: 2px solid #e6b745;
+  padding: 8px;
+  border-radius: 5px;
+  color: #121212;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.select-level__btn:hover {
+  background-color: #d79e17;
+  border: 2px solid #d79e17;
+}
+
+@media (max-width: 575px) {
+  .select-level {
+    width: 420px;
+  }
+}
+
+@media (max-width: 480px) {
+  .select-level {
+    width: 350px;
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .select-level {
+    width: 300px;
+  }
+}
