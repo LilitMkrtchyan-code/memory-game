@@ -1,12 +1,14 @@
 import { useState } from "react";
 import "./MemoryCard.css";
 
-export const MemoryCard = ({ name, card, onCardClick }) => {
+export const MemoryCard = ({ name, card, onCardClick, isWordHidden }) => {
   const [isClickedCard, setIsClickedCard] = useState(false);
 
   const handleCardClick = () => {
-    setIsClickedCard(true);
-    onCardClick(card.id);
+    if (isWordHidden) {
+      setIsClickedCard(true);
+      onCardClick(card.id);
+    }
   };
 
   return (

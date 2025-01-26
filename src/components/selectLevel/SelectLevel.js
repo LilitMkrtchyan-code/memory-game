@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./SelectLevel.css";
 
-export const SelectLevel = ({ onFilterCard }) => {
+export const SelectLevel = ({ onFilterCards }) => {
   const [selectedLevel, setSelectedLevel] = useState("6 Cards");
 
   const handleChangeLevel = (event) => {
@@ -11,7 +11,7 @@ export const SelectLevel = ({ onFilterCard }) => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     const levelNumber = parseInt(selectedLevel.split(" ")[0], 10);
-    onFilterCard(levelNumber);
+    onFilterCards(levelNumber);
   };
 
   return (
