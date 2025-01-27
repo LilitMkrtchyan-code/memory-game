@@ -38,7 +38,7 @@ export const MemoryGame = () => {
         setIsGameFinish(true);
       }
     };
-  
+
     checkGameFinished();
   }, [cards]);
 

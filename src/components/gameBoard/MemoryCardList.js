@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MemoryCard } from "./MemoryCard";
 import "./MemoryCardList.css";
 
-export const MemoryCardList = ({ cards, onCardClick, onCheckGame }) => {
+export const MemoryCardList = ({ cards, onCardClick}) => {
   const [isWordHidden, setIsWordHidden] = useState(false);
 
   const handleHide = () => {
