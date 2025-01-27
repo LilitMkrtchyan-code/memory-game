@@ -32,14 +32,8 @@ export const MemoryGame = () => {
   };
 
   useEffect(() => {
-    const checkGameFinished = () => {
-      const isFinish = cards.every((card) => card.isPredicted);
-      if (isFinish) {
-        setIsGameFinish(true);
-      }
-    };
-
-    checkGameFinished();
+    const isFinish = cards.every((card) => card.isPredicted);
+    setIsGameFinish(isFinish);
   }, [cards]);
 
   return (
