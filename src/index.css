@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #33425c;
+  background-color: #333333;
   font-family: "Open Sans", serif;
   font-size: 15px;
   line-height: 1.5;
@@ -19,4 +19,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* #31333A #33425c #62676f*/
+/*#5c5e62 #62676f #333333*/
