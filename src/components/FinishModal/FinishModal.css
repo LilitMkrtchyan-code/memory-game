@@ -1,0 +1,84 @@
+.finish-modal__backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.finish-modal__content {
+  position: fixed;
+  top: 20vh;
+  z-index: 10;
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finish-modal__title {
+  font-family: "Roboto Condensed", serif;
+  letter-spacing: 2px;
+  font-size: 35px;
+  color: #ed1c24;
+  margin-bottom: 15px;
+}
+
+.finish-modal__img {
+  width: 50px;
+  height: 50px;
+}
+
+.finish-modal__btn {
+  font-family: "Open Sans", serif;
+  background-color: transparent;
+  color: #121212;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border: 3px solid #e6b745;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.finish-modal__btn:hover {
+  background-color: #e6b745;
+  border: 3px solid #e6b745;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.finish-modal__content {
+  animation: slideIn 0.8s ease forwards;
+}

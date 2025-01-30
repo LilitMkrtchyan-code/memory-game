@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { memoryCards } from "../../data/memoryCards";
-import { SelectLevel } from "../selectLevel/SelectLevel";
-import { MemoryCardList } from "./MemoryCardList";
-import { FinishGame } from "./FinishGame";
+import { SelectLevel } from "../SelectLevel/SelectLevel";
+import { MemoryCardList } from "../GameBoard/memoryCardList/MemoryCardList";
+import { FinishModal } from "../FinishModal/FinishModal";
 import "./MemoryGame.css";
 
 export const MemoryGame = () => {
@@ -44,7 +44,7 @@ export const MemoryGame = () => {
       ) : (
         <MemoryCardList cards={cards} onCardClick={handleCardClick} />
       )}
-      {isGameFinish && <FinishGame onClick={handleStartGame} />}
+      {isGameFinish && <FinishModal onClick={handleStartGame} />}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { MemoryGame } from "./components/gameBoard/MemoryGame";
+import { MemoryGame } from "./components/MemoryGame/MemoryGame";
 import "./App.css";
 
 function App() {

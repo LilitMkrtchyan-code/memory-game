@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./SelectLevel.css";
 
 export const SelectLevel = ({ onFilterCards }) => {
-  const [selectedLevel, setSelectedLevel] = useState("6 Cards");
+  const [selectedLevel, setSelectedLevel] = useState("6");
 
   const handleChangeLevel = (event) => {
     setSelectedLevel(event.target.value);
